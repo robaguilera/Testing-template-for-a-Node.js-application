@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/**/*.js",
+    "test": "nodemon --exec mocha test/**/*.js",
     "coverage": "nyc --reporter=html --reporter=text npm test",
     "stryker": "npx stryker run"
   },
@@ -24,5 +24,9 @@
     "include": [
       "src/**/*.js"
     ]
+  },
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "nodemon": "^2.0.4"
   }
 }
